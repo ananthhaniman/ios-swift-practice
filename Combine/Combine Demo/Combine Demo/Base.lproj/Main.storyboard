@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gZu-LW-cae">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="V4p-Pd-4Bc">
+            <objects>
+                <navigationController id="gZu-LW-cae" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="z6o-qr-irR">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="oc5-mj-Enz" kind="relationship" relationship="rootViewController" id="vs3-oF-knc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6at-da-cYz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15" y="88"/>
+        </scene>
+        <!--Combine Demo-->
+        <scene sceneID="Q6F-7U-pXB">
+            <objects>
+                <viewController id="oc5-mj-Enz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jis-OO-QcJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hFz-MD-Dds">
+                                <rect key="frame" x="125.5" y="413" width="163" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ask-rx-1BW">
+                                        <rect key="frame" x="0.0" y="0.0" width="163" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="TableView + Combine"/>
+                                        <connections>
+                                            <segue destination="sI8-QO-5jK" kind="show" id="L1h-xW-DbJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ulk-fQ-1H2">
+                                        <rect key="frame" x="0.0" y="39" width="163" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Form + Combine"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qvC-pI-Mg5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hFz-MD-Dds" firstAttribute="centerY" secondItem="jis-OO-QcJ" secondAttribute="centerY" id="IaK-Gn-OvK"/>
+                            <constraint firstItem="hFz-MD-Dds" firstAttribute="centerX" secondItem="jis-OO-QcJ" secondAttribute="centerX" id="R2O-xz-Dpn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Combine Demo" id="ymj-e4-4sA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nu5-CB-LGY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="989.85507246376824" y="87.723214285714278"/>
+        </scene>
+        <!--Combine Table-->
+        <scene sceneID="bha-YX-aj2">
+            <objects>
+                <viewController title="Combine Table" id="sI8-QO-5jK" customClass="CombineTableViewController" customModule="Combine_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C44-7q-njr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="zY7-jz-UOq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="q7A-xY-j6y"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qRi-Jc-D6f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2014" y="94"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
